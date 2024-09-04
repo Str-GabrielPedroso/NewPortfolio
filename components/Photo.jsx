@@ -4,6 +4,10 @@ import { motion } from "framer-motion";
 import Image from "next/image";
 
 const Photo = () => {
+    const loaderProp =({ src }) => {
+        return src;
+    };
+
     return (
         <div className="w-full h-full relative">
             <motion.div
@@ -13,7 +17,7 @@ const Photo = () => {
                 <div className="w-[200px] h-[200px] xl:w-[360px] xl:h-[360px]">
                     <Image
                         src="/assets/profile.png"
-                        overrideSrc="/override.png"
+                        loader={loaderProp}
                         priority
                         quality={100}
                         fill
