@@ -13,6 +13,7 @@ const Photo = () => {
                 <div className="w-[200px] h-[200px] xl:w-[360px] xl:h-[360px]">
                     <Image
                         src="/assets/profile.png"
+                        overrideSrc="/assets/profile.png"
                         priority
                         quality={100}
                         fill
