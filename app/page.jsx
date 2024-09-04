@@ -27,7 +27,7 @@ const Home = () => {
             <div className="flex flex-col xl:flex-row items-center gap-8">
               <a
                 download
-                href="/Assets/Curriculo.pdf"
+                href="/assets/Curriculo.pdf"
                 size="lg"
                 className="uppercase flex items-center gap-2 p-3 border border-accent bg-transparent text-accent hover:bg-accent hover:text-primary rounded-full"
               >
