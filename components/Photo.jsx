@@ -2,10 +2,7 @@
 
 import { motion } from "framer-motion";
 import Image from "next/image";
-
-const loaderProp = ({ src }) => {
-    return src;
-};
+import profileImg from "../public/assets/profile.png"
 
 const Photo = () => {
 
@@ -17,8 +14,7 @@ const Photo = () => {
             >
                 <div className="w-[200px] h-[200px] xl:w-[360px] xl:h-[360px]">
                     <Image
-                        src="/assets/profile.png"
-                        loader={loaderProp}
+                        src={profileImg}
                         priority
                         quality={100}
                         fill
