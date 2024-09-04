@@ -60,7 +60,7 @@ const projects = [
             { icon: <FaReact /> },
         ],
         image: "/assets/thumb03.png",
-        live: "https://new-portfolio-livid-chi.vercel.app",
+        live: "https://new-portfolio-nine-lyart.vercel.app",
         github: "https://github.com/Str-GabrielPedroso/NewPortfolio",
     },
     {
