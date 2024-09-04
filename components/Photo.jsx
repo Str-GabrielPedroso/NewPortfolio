@@ -3,16 +3,17 @@
 import { motion } from "framer-motion";
 import Image from "next/image";
 
+const loaderProp = ({ src }) => {
+    return src;
+};
+
 const Photo = () => {
-    const loaderProp =({ src }) => {
-        return src;
-    };
 
     return (
         <div className="w-full h-full relative">
             <motion.div
                 initial={{ opacity: 0 }}
-                animate={{ opacity: 1, transition: { delay: 1.8, duration: 0.3, ease: "easeInOut"}}}
+                animate={{ opacity: 1, transition: { delay: 1.8, duration: 0.3, ease: "easeInOut" } }}
             >
                 <div className="w-[200px] h-[200px] xl:w-[360px] xl:h-[360px]">
                     <Image
