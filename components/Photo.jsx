@@ -3,6 +3,12 @@
 import { motion } from "framer-motion";
 import Image from "next/image";
 
+const pleaseImg = [
+    {
+        image: "/assets/profile.png",
+    }
+]
+
 const Photo = () => {
 
     return (
@@ -13,7 +19,7 @@ const Photo = () => {
             >
                 <div className="w-[200px] h-[200px] xl:w-[360px] xl:h-[360px]">
                     <Image
-                        src="/assets/profile.png"
+                        src={pleaseImg.image}
                         priority
                         quality={100}
                         fill
